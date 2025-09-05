@@ -7,7 +7,7 @@
 body {
     font-family: Arial, sans-serif; 
     line-height: 1.6; 
-    background:#f4f4f4;
+    background:#fad1d8;
     color: #93253d;
 }
 
@@ -95,7 +95,7 @@ h2 {
 
 .sobre-informacoes p {
     font-size: 1rem;
-    color: #555;
+    color: #93253d;
 }
 .cards {
     display: block; 
@@ -137,9 +137,35 @@ h2 {
 }
 
 .projeto img {
-    aspect-ratio: 16/9;
-    width: 250px;     
+    aspect-ratio: 16/9;   /* mantém a proporção */
+    width: 250px;         
+    height: auto;         /* deixa a altura se ajustar automaticamente */
+    object-fit: cover;    /* corta um pouquinho se precisar, mas não distorce */
     border-radius: 8px;
+    border: 2px solid #93253d;
+
 }
 
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); /* 6 colunas iguais */
+  gap: 15px;
+  margin-bottom: 1rem;
+}
 
+.skill {
+  width: 100%;                /* ocupa todo o espaço da coluna */
+  padding: 1rem;              /* mantém espaço interno */
+  background: #ef8799;
+  color: white;
+  border-radius: 8px;         /* mantém bordas arredondadas */
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+  text-align: center;
+  box-sizing: border-box;     /* padding respeitado dentro da largura */
+}
+
+.skill:hover {
+  transform: scale(1.05);     /* leve aumento ao passar o mouse */
+  background: #93253d;
+}
