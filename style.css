@@ -7,7 +7,7 @@
 body {
     font-family: Arial, sans-serif; 
     line-height: 1.6; 
-    background:#fad1d8;
+    background:#f4f4f4;
     color: #93253d;
 }
 
@@ -137,35 +137,65 @@ h2 {
 }
 
 .projeto img {
-    aspect-ratio: 16/9;   /* mantém a proporção */
-    width: 250px;         
-    height: auto;         /* deixa a altura se ajustar automaticamente */
-    object-fit: cover;    /* corta um pouquinho se precisar, mas não distorce */
+    aspect-ratio: 16/9;
+    width: 250px;     
     border-radius: 8px;
-    border: 2px solid #93253d;
-
 }
 
 .skills-container {
   display: grid;
-  grid-template-columns: repeat(6, 1fr); /* 6 colunas iguais */
+  grid-template-columns: repeat(6, 1fr); 
   gap: 15px;
   margin-bottom: 1rem;
 }
 
 .skill {
-  width: 100%;                /* ocupa todo o espaço da coluna */
-  padding: 1rem;              /* mantém espaço interno */
+  width: 100%;                
+  padding: 1rem;              
   background: #ef8799;
   color: white;
-  border-radius: 8px;         /* mantém bordas arredondadas */
+  border-radius: 8px;         
   cursor: pointer;
   transition: transform 0.3s ease, background 0.3s ease;
   text-align: center;
-  box-sizing: border-box;     /* padding respeitado dentro da largura */
+  box-sizing: border-box;     
 }
 
 .skill:hover {
-  transform: scale(1.05);     /* leve aumento ao passar o mouse */
+  transform: scale(1.05);    
   background: #93253d;
 }
+
+#contatos {
+    text-align: center;
+    padding: 2rem;
+    margin: 1rem;
+    background: #fbc7d0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.curiosidades-mim {
+    display: flex;
+    flex-direction: column; 
+    gap: 1.5rem;
+}
+
+.item {
+    display: flex;           
+    align-items: center;    
+    gap: 1rem;              
+}
+
+.foto-curiosidades {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #93253d;
+}
+
+.sobre-informacoes {
+    display: flex;
+    flex-direction: column; 
+}
+
